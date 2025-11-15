@@ -178,7 +178,7 @@ export default async function ProgramPage() {
           ) : (
             <Card>
               <CardContent className="p-12 text-center text-gray-600">
-                
+                  Event akan segera ditambahkan
               </CardContent>
             </Card>
           )}
@@ -232,7 +232,7 @@ export default async function ProgramPage() {
           ) : (
             <Card>
               <CardContent className="p-12 text-center text-gray-600">
-                
+                Humas akan segera ditambahkan
               </CardContent>
             </Card>
           )}
@@ -286,7 +286,7 @@ export default async function ProgramPage() {
           ) : (
             <Card>
               <CardContent className="p-12 text-center text-gray-600">
-                
+                Rukem akan segera ditambahkan
               </CardContent>
             </Card>
           )}

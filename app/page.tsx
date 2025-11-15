@@ -51,7 +51,7 @@ export default async function Home() {
         {/* Overlayed content positioned over the banner; content is centered within max-w container */}
         <div className="absolute inset-0 flex items-center z-30">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center space-y-6 py-12 md:py-16">
+            <div className="text-center space-y-3 py-12 md:py-16">
               <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-[0_4px_4px_rgba(21,128,61,0.8)]">
                 Masjid Daarussalaam
               </h1>
