@@ -28,13 +28,20 @@ export default function KontakPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700">
-                  Bekasi Timur Regency 7D<br />
-                  Cluster Dianella<br />
-                  Desa Burangkeng<br />
-                  Kec. Setu<br />
-                  Bekasi
-                </p>
+                <a
+                  href="https://maps.app.goo.gl/Rm1cST3aypaSLn5w9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-emerald-600 hover:underline transition-colors cursor-pointer"
+                >
+                  <p>
+                    Bekasi Timur Regency 7D<br />
+                    Cluster Dianella<br />
+                    Desa Burangkeng<br />
+                    Kec. Setu<br />
+                    Bekasi
+                  </p>
+                </a>
               </CardContent>
             </Card>
 

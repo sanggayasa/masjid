@@ -43,7 +43,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span>Perumahan BTR 7B, Cluster Dianella, Burangkeng, Setu, Bekasi Timur</span>
+                <a href="https://maps.app.goo.gl/Rm1cST3aypaSLn5w9" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-500 transition-colors cursor-pointer">Perumahan BTR 7B, Cluster Dianella, Burangkeng, Setu, Bekasi Timur</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
