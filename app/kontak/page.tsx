@@ -170,7 +170,17 @@ export default function KontakPage() {
                   </div>
                 </div>
 
-                <div className="w-full h-[600px] bg-gray-200 rounded-lg overflow-hidden">
+                <div className="w-full h-[600px] bg-gray-200 rounded-lg overflow-hidden relative group">
+                  <a
+                    href="https://maps.app.goo.gl/Rm1cST3aypaSLn5w9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 z-10 group-hover:bg-black/10 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"
+                  >
+                    <div className="text-white text-center bg-black/60 px-4 py-2 rounded-lg">
+                      <p className="font-semibold">Buka di Google Maps</p>
+                    </div>
+                  </a>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5493.862945006016!2d107.02354147624963!3d-6.3298418936597445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69910fe45da71b%3A0x483045882c27c3a0!2sBTR%207%20Cluster%20Dianella!5e1!3m2!1sen!2sid!4v1763138684569!5m2!1sen!2sid" 
                     width="100%"
                     height="100%"
@@ -179,18 +189,9 @@ export default function KontakPage() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Lokasi Masjid Daarussalaam"
+                    className="pointer-events-none"
                   >
                   </iframe>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2087176954647!2d106.79324731476895!3d-6.243032995469429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1b1e1e1e1e1%3A0x1e1e1e1e1e1e1e1e!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Lokasi Masjid Daarussalaam"
-                  ></iframe>
                 </div>
                 <div className="mt-4 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
                   <p className="text-sm text-gray-700">
