@@ -49,11 +49,25 @@ export default function KontakPage() {
                 <div className="space-y-2">
                   <div>
                     <p className="text-sm text-gray-600 mb-1">Ketua DKM Acep</p>
-                    <p className="text-lg font-semibold text-gray-900">+62 8778-9513-706</p>
+                    <a 
+                      href="https://wa.me/6287789513706"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-semibold text-emerald-600 hover:text-emerald-700 hover:underline cursor-pointer"
+                    >
+                      +62 8778-9513-706
+                    </a>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600 mb-1">Bendahara Jayanti</p>
-                    <p className="text-lg font-semibold text-gray-900">+62 8577-1838-631</p>
+                    <a 
+                      href="https://wa.me/6285771838631"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-semibold text-emerald-600 hover:text-emerald-700 hover:underline cursor-pointer"
+                    >
+                      +62 8577-1838-631
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -131,15 +145,28 @@ export default function KontakPage() {
               <CardContent>
                 <div className="w-full rounded-lg overflow-hidden mb-6">
                   <div className="aspect-video w-full bg-black">
-                    <iframe
-                      src="https://www.youtube.com/embed/QUlzvBWGoyk"
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      loading="lazy"
-                      className="w-full h-full"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    />
+                    <a
+                      href="https://www.youtube.com/@DianellaDaarussalaam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full h-full bg-black hover:bg-gray-900 transition-colors relative cursor-pointer"
+                    >
+                      <iframe
+                        src="https://www.youtube.com/embed/QUlzvBWGoyk"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        loading="lazy"
+                        className="w-full h-full pointer-events-none"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black/50 transition-opacity">
+                        <div className="text-white text-center">
+                          <p className="text-lg font-semibold mb-2">Kunjungi Channel YouTube</p>
+                          <p className="text-sm">@DianellaDaarussalaam</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
 

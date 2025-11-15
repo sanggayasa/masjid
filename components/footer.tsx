@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Building2, MapPin, Phone, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Building2, MapPin, Phone, Mail, Facebook, Instagram, Play } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -21,13 +21,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-emerald-500 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-emerald-500 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-emerald-500 transition-colors">
-                <Youtube className="h-5 w-5" />
+                <Play className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -53,15 +47,19 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>Acep +62 8778 9513 706</span>
+                <a href="https://wa.me/6287789513706" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-500 transition-colors cursor-pointer">Acep +62 8778 9513 706</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>Jayanti +62 8577 1838 631</span>
+                <a href="https://wa.me/6285771838631" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-500 transition-colors cursor-pointer">Jayanti +62 8577 1838 631</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 flex-shrink-0" />
                 <span>@DKMDaarussalaam.com</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <Play className="h-4 w-4 flex-shrink-0" />
+                <a href="https://www.youtube.com/@DianellaDaarussalaam" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-500 transition-colors cursor-pointer">@DianellaDaarussalaam</a>
               </li>
             </ul>
           </div>
