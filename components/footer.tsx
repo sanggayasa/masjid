@@ -34,7 +34,6 @@ export function Footer() {
               <li><Link href="/program" className="hover:text-emerald-500 transition-colors">Program & Kegiatan</Link></li>
               <li><Link href="/donasi" className="hover:text-emerald-500 transition-colors">Donasi</Link></li>
               <li><Link href="/galeri" className="hover:text-emerald-500 transition-colors">Galeri</Link></li>
-              <li><Link href="/artikel" className="hover:text-emerald-500 transition-colors">Artikel</Link></li>
             </ul>
           </div>
 
