@@ -13,6 +13,16 @@ import img7 from '../../images/program/7.webp';
 import img8 from '../../images/program/8.webp';
 import img9 from '../../images/program/9.webp';
 import img10 from '../../images/program/10.webp';
+import imgp1 from '../../images/program2/1.webp';
+import imgp2 from '../../images/program2/2.webp';
+import imgp3 from '../../images/program2/3.webp';
+import imgp4 from '../../images/program2/4.webp';
+import imgp5 from '../../images/program2/5.webp';
+import imgp6 from '../../images/program2/6.webp';
+import imgp7 from '../../images/program2/7.webp';
+import imgp8 from '../../images/program2/8.webp';
+import imgp9 from '../../images/program2/9.webp';
+import imgp10 from '../../images/program2/10.webp';
 import { supabase } from '@/lib/supabase';
 
 async function getPrograms() {
@@ -27,12 +37,12 @@ async function getPrograms() {
 
 export default async function ProgramPage() {
   const programs = await getPrograms();
-  const kajian = programs.filter((p) => p.category === 'kajian');
+  const kajians = programs.filter((p) => p.category === 'kajian');
   const madrasah = programs.filter((p) => p.category === 'madrasah');
   const events = programs.filter((p) => p.category === 'event');
 
   const programImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
-
+  const programImagesSieIbadah = [imgp1, imgp2, imgp3, imgp4, imgp5, imgp6, imgp7, imgp8, imgp9, imgp10];
   return (
     <div className="min-h-screen">
       <section className="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-900 text-white overflow-hidden">
@@ -46,12 +56,33 @@ export default async function ProgramPage() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <ProgramsAccordion groups={{ kajian, madrasah, event: events, humas: events, rukem: events }} />
 
         <div className="mt-12">
           <div className="flex items-center space-x-2 mb-6">
             <Calendar className="h-6 w-6 text-emerald-600" />
-            <h2 className="text-3xl font-bold text-gray-900">Program Kerja sie pendidikan</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Program Kerja Sie Ibadah</h2>
+          </div>
+
+          <Card>
+            <CardContent>
+              <p className="text-gray-700 mb-4"></p>
+              <div className="grid grid-cols-1 gap-6">
+                {programImagesSieIbadah.map((src) => (
+                  <div key={src.src} className="w-full rounded overflow-hidden relative h-[700px] sm:h-[800px] md:h-[900px] bg-gray-100 flex items-center justify-center">
+                    <Image src={src} alt={`Program Kerja halaman`} fill className="object-contain" loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <div className="mt-12">
+          <div className="flex items-center space-x-2 mb-6">
+            <Calendar className="h-6 w-6 text-emerald-600" />
+            <h2 className="text-3xl font-bold text-gray-900">Program Kerja Sie pendidikan</h2>
           </div>
 
           <Card>
