@@ -51,12 +51,12 @@ export default async function ProgramPage() {
         <div className="mt-12">
           <div className="flex items-center space-x-2 mb-6">
             <Calendar className="h-6 w-6 text-emerald-600" />
-            <h2 className="text-3xl font-bold text-gray-900">Program Kerja (Dokumen)</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Program Kerja sie pendidikan</h2>
           </div>
 
           <Card>
             <CardContent>
-              <p className="text-gray-700 mb-4">Dokumen program kerja (gambar, lazy-loaded)</p>
+              <p className="text-gray-700 mb-4"></p>
               <div className="grid grid-cols-1 gap-6">
                 {programImages.map((src) => (
                   <div key={src.src} className="w-full rounded overflow-hidden relative h-[700px] sm:h-[800px] md:h-[900px] bg-gray-100 flex items-center justify-center">

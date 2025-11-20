@@ -15,7 +15,10 @@ type Program = {
   category?: string | null;
 };
 
-export default function ProgramsAccordion({ groups }:{ groups: Record<string, Program[]> }) {
+type Props = Readonly<{ groups: Record<string, Program[]> }>;
+
+export default function ProgramsAccordion(props: Props) {
+  const { groups } = props;
   const [openId, setOpenId] = useState<string | number | null>(null);
 
   const toggle = (id: string | number) => {
@@ -26,21 +29,22 @@ export default function ProgramsAccordion({ groups }:{ groups: Record<string, Pr
     const isOpen = openId === program.id;
     return (
       <Card key={program.id} className="hover:shadow-lg transition-shadow">
-        <div
-          role="button"
-          tabIndex={0}
-          onClick={() => toggle(program.id)}
-          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') toggle(program.id); }}
-        >
-          <CardHeader>
+        <CardHeader>
+          <button
+            type="button"
+            onClick={() => toggle(program.id)}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') toggle(program.id); }}
+            className="w-full text-left cursor-pointer"
+          >
             <div className="flex items-start justify-between">
               <CardTitle className="text-xl">{program.title}</CardTitle>
               <div className="flex items-center space-x-2">
                 {program.category && <Badge className="bg-emerald-600">{program.category}</Badge>}
               </div>
             </div>
-          </CardHeader>
-          <CardContent>
+          </button>
+        </CardHeader>
+        <CardContent>
             <div className="flex flex-col">
               <div className="w-full h-24 sm:h-28 md:h-32 lg:h-36 bg-gray-100 rounded overflow-hidden relative flex items-center justify-center">
                 {program.image_url ? (
@@ -88,7 +92,6 @@ export default function ProgramsAccordion({ groups }:{ groups: Record<string, Pr
               )}
             </div>
           </CardContent>
-        </div>
       </Card>
     );
   };
