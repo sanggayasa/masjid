@@ -54,7 +54,7 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <span>@DKMDaarussalaam.com</span>
+                <span>dianelladarusalam@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Play className="h-4 w-4 flex-shrink-0" />

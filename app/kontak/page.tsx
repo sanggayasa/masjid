@@ -35,7 +35,7 @@ export default function KontakPage() {
                   className="text-gray-700 hover:text-emerald-600 hover:underline transition-colors cursor-pointer"
                 >
                   <p>
-                    Bekasi Timur Regency 7D<br />
+                    Bekasi Timur Regency 7B<br />
                     Cluster Dianella<br />
                     Desa Burangkeng<br />
                     Kec. Setu<br />
@@ -88,7 +88,7 @@ export default function KontakPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold text-gray-900">@DKMDaarussalaam.com</p>
+                <p className="text-lg font-semibold text-gray-900">dianelladarusalam@gmail.com</p>
                 <p className="text-sm text-gray-600 mt-2">
                   Kami akan merespons email Anda dalam 1-2 hari kerja
                 </p>
